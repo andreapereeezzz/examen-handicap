@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos.css">
+  <title>EXAMEN</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <form id="formulario" action="index.html" method="post">
+      <h1><b>EXAMEN DE OBTENCIÓN DEL HANDICAP 2022</b></h1>
+
+      <div class="row datos">
+        <div class="col">
+
+          <label class="form-label" for=""><strong>Nombre:</strong></label>
+          <input class="form-control form-control-sm" type="text" name="nombre" value="">
+
+          <label class="form-label" for=""><strong>Apellidos:</strong></label>
+          <input class="form-control form-control-sm" type="text" name="apellidos" value="">
+
+          <label class="form-label" for=""><strong>DNI/NIF:</strong></label>
+          <input class="form-control form-control-sm" type="text" name="dni" value="" maxlength="10">
+
+        </div>
+
+        <div class="col">
+          <label class="form-label" for=""><strong>Jugador:</strong></label>
+          <input class="form-control form-control-sm" type="text" name="jugador" value="">
+
+          <label class="form-label" for=""><strong>Club:</strong></label>
+          <input class="form-control form-control-sm" type="text" name="club" value="">
+
+          <label class="form-label" for=""><strong>Licencia:</strong></label>
+          <input class="form-control form-control-sm" type="text" name="licencia" value="" maxlength="10">
+        </div>
+
+      </div>
+      <br>
+      <div class="row preguntas">
+
+        <div class="col">
+          <p>¡Bienvenido Golfista! La prueba constará de 10 preguntas con tres respuestas posibles y sólo una cierta. Serán necesarios 7 aciertos para tener la calificación de <strong>APTO.</strong> </p>
+
+          <label class="form-label" for=""><strong><span class=impar>1. Las Reglas de Golf, para evitar jugar una bola equivocada, siempre permiten a un jugador levantar y limpiar su bola sin restricciones, para identificarla.</span></strong></label><br>
+          <select class="form-select" name="pregunta1" id="pregunta1">
+            <option selected value="...">...</option>
+            <option value="Verdadero">Verdadero</option>
+            <option value="Falso">Falso</option>
+          </select>
+          <br>
+
+          <label for="flexRadioDefault1"><strong><span class=par>2. ¿Qué es un árbol en un campo de golf?</span></strong></label> <br>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="pregunta2" value="no">Una obstrucción.<br>
+            <input class="form-check-input" type="radio" name="pregunta2" value="no"> Un obstáculo.<br>
+            <input class="form-check-input" type="radio" name="pregunta2" value="si"> Un elemento integrante del campo.<br>
+          </div>
+          <br>
+
+          <label class="form-label" for=""><strong><span class=impar>3. ¿Cómo se llama a la depresión del terreno cubierta de arena?</span></strong></label>
+          <input class="form-control form-control-sm" type="text" name="pregunta3" value="" maxlength="6">
+          <br>
+
+          <label for="flexRadioDefault1"><strong><span class=par>4. ¿Se debe jugar cuando los jugadores que van delante están muy lejos?</span></strong></label> <br>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="pregunta4" value="si">Sólo cuando estemos totalmente seguros que están fuera de nuestro alcance. <br>
+            <input class="form-check-input" type="radio" name="pregunta4" value="no">Sí, pero con cuidado.<br>
+            <input class="form-check-input" type="radio" name="pregunta4" value="no">No mientras los veamos.<br>
+          </div>
+          <br>
+
+          <label class="form-label" for=""><strong><span class=impar>5. Jugar una bola equivocada, en cualquier circunstancia, lleva aparejado la Penalización General.</span></strong></label><br>
+          <select class="form-select" name="pregunta5" id="pregunta5">
+            <option selected value="...">...</option>
+            <option value="Verdadero">Verdadero</option>
+            <option value="Falso">Falso</option>
+          </select>
+          <br>
+
+          <label for="flexRadioDefault1"><strong><span class=par>6. Una vez iniciado el juego, ¿quién tiene prioridad en el campo?</span></strong></label> <br>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="pregunta6" value="si">El partido que juega más rápido.<br>
+            <input class="form-check-input" type="radio" name="pregunta6" value="no">El partido de cuatro jugadores. <br>
+            <input class="form-check-input" type="radio" name="pregunta6" value="no">El que juega solo.<br>
+          </div>
+          <br>
+
+          <label for="flexRadioDefault1"><strong><span class=impar>7. ¿Qué significa el concepto "dar paso"?</span></strong></label> <br>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="pregunta7" value="no">Dejar que jueguen primero los jugadores con Hándicap bajo<br>
+            <input class="form-check-input" type="radio" name="pregunta7" value="si">Dejar pasar a los jugadores del partido de atrás si vienen jugando más rápido y sin esperar a que lo pidan.<br>
+            <input class="form-check-input" type="radio" name="pregunta7" value="no">Esperar a que nos lo pidan y dejar pasar<br>
+          </div>
+          <br>
+
+          <label for="flexRadioDefault1"><strong><span class=par>8. Estamos llegando al green. ¿Qué deberíamos hacer?</span></strong></label> <br>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="pregunta8" value="no"> Dejar los palos a la entrada y patear.<br>
+            <input class="form-check-input" type="radio" name="pregunta8" value="no">Después de patear, anotar el resultado antes de abandonar el green.<br>
+            <input class="form-check-input" type="radio" name="pregunta8" value="si">Dejar los palos próximos al lugar de salida del siguiente hoyo, marcar la bola, arreglar nuestro "pique" y alguno más si lo hubiera y observar a los demás jugadores
+            para no
+            entorpecer su juego. <br>
+          </div>
+          <br>
+
+          <label for="flexRadioDefault1"><strong><span class=impar>9. ¿Cuánto tiempo se puede emplear en buscar una bola, antes de que tenga la consideración de bola perdida?</span></strong></label> <br>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="pregunta9" value="si">Menos de cinco minutos.<br>
+            <input class="form-check-input" type="radio" name="pregunta9" value="no">Hasta que el partido que viene detrás esté en disposición de jugar.<br>
+            <input class="form-check-input" type="radio" name="pregunta9" value="no">Cinco minutos.<br>
+          </div>
+          <br>
+
+          <label class="form-label" for=""><strong><span class=par>10. Escribe la formula para calcular el hándicap:</span></strong></label><br>
+          <textarea name="pregunta10" rows="8" cols="50" name="pregunta10" value="pregunta10"></textarea>
+          <br>
+          <button class="botonEnvio btn btn-lg mt-4 mb-4" type="button" name="button">ENVIAR</button>
+          <button class="botonReset btn btn-lg btn-danger mt-4 mb-4" type="button" name="button">RESET</button>
+
+
+        </div>
+
+      </div>
+
+    </form>
+
+    <br>
+
+    <div class="solucion">
+      <h2></h2>
+    </div>
+
+  </div>
+
+
+  <script src="javascript.js" charset="utf-8"></script>
+</body>
+
+</html>
