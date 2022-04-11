@@ -235,3 +235,11 @@ fondoSolu.style.backgroundColor="#F1948A";
 
 botonEnvio.disabled=true;
 });
+
+
+var botonReintentar=document.querySelector(".botonReintentar");
+  botonReintentar.addEventListener("click",function(){
+
+    location.reload();
+  
+});

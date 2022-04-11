@@ -37,6 +37,7 @@ h2{
 .botonEnvio{
   background-color: #80a9d4;
   color: white;
+  margin-right: 2%;
 }
 
 .impar{
@@ -44,5 +45,11 @@ h2{
 }
 
 .par{
-  color:#779e29; 
+  color:#779e29;
+}
+
+.botonReintentar{
+  background-color: #779e29;
+  color: white;
+    margin-left: 2%;
 }
